@@ -1,0 +1,47 @@
+/* === Consistent Card Height === */
+.product-grid-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Make image area fixed height */
+.product-grid-image {
+    height: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.product-grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Let content take remaining space */
+.product-grid-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Buttons area spacing */
+.product-grid-content .d-flex.justify-content-between {
+    margin-top: auto;
+}
+
+/* Make all cards same height visually */
+.row .col > .product-grid-card {
+    height: 100%;
+}
+
+/* Hover lift effect (optional) */
+.product-grid-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+
+/* Title hover color */
+.hover-primary:hover {
+    color: #477CDB !important;
+}
