@@ -5,7 +5,7 @@
 
                 $meta = json_decode($post->meta,true);
             }
-;    @endphp
+   @endphp
     <input type="text" name="icon" class="form-control" placeholder="Font awesome icon class" value="{{ old('icon',$meta['icon']??'') }}" >
     @error('icon')
         <small class="text-danger">{{ $message }}</small>

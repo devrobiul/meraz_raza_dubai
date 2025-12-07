@@ -32,7 +32,7 @@
 
                             @includeWhen($post->type === 'award', 'admin.pages.post.components.award')
                             @includeWhen($post->type === 'service', 'admin.pages.post.components.icon')
-                        @includeWhen($post->type === 'review', 'admin.pages.post.components.review')
+                            @includeWhen($post->type === 'review', 'admin.pages.post.components.review')
                             <div class="col-md-3">
                                 <label class="form-label">Thumbnail Image</label>
                                 <input type="file" name="image" class="form-control" accept="image/*"
